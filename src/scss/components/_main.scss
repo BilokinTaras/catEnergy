@@ -1,0 +1,33 @@
+.main__bg{
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: -1;
+}
+.main__content{
+   padding: 109px 0 0px 80px;
+}
+.main__picture{
+   position: relative;
+}
+.main__food{
+   position: absolute;
+   z-index: 10;
+   top: 27px;
+   width: 552px;
+   position: relative;
+   right: 87px;
+}
+.main__wrapper{
+   display: flex;
+}
+.main__title{
+   max-width: 455px;
+   margin: 0 0 40px 0;
+}
+.btn__main{
+   padding: 27px 26px;
+}
+.main__subtitle{
+   margin: 0 0 51px 0;
+}

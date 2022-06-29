@@ -1,0 +1,74 @@
+.catalog{
+   margin: 162px 0 0 0;
+}
+.catalog__wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.catalog__item{
+   max-width: 568px;
+   background: var(--color-gray);
+   padding: 41px 40px 59px 51px;
+}
+.catalog__title{
+   padding: 34px 5px 10px 163px;
+   margin: 0;
+   font-family: 'Oswald';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 36px;
+   text-transform: uppercase;
+   color: var(--color-black);
+   position: relative;
+   &::after{
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 100%;
+      background-color: var(--color-green);
+      left: 0;
+      top: 4px;
+   }
+}
+.catalog__descr{
+   padding: 64px 0 0 0;
+}
+.catalog__name{
+   padding: 26px 0 0 0;
+   display: block;
+   font-size: 20px;
+   line-height: 30px;
+   text-transform: uppercase;
+   color: #000000;
+   position: relative;
+   &::after{
+      position: absolute;
+      content: url("../img/arrow-catalog.svg");
+      left: 136px;
+      bottom: 3px;
+   }
+}
+.weight--gain{
+   position: relative;
+   &::before{
+      position: absolute;
+      content: url("../img/cat-pro.svg");
+      top: 24px;
+      left: -20px;
+      z-index: 10;
+   }
+}
+.weight--loss{
+   position: relative;
+   &::before{
+      position: absolute;
+      content: url("../img/cat-slim.svg");
+      top: -3px;
+      left: 16px;
+      z-index: 10;
+   }
+}
