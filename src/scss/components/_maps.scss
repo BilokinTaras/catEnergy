@@ -1,0 +1,49 @@
+.maps{
+   position: relative;
+   min-height: 400px;
+}
+.maps__iframe{
+   position: absolute;
+   width: 100%;
+   border: 0;
+   height: 400px;
+   top: 0;
+   left: 0;
+}
+.maps__nav{
+   top: 95px;
+   position: absolute;
+   z-index: 10;
+   width: 570px;
+   height: 201px;
+   background-color: var(--color-light);
+   padding: 10px 5px 5px 90px;
+}
+.location__subtitle{
+   margin: 0;
+   line-height: 24px;
+   max-width: 165px;
+}
+.location{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 58px 89px 56px 76px;
+}
+.location__street{
+   font-family: 'Arial';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #444444;
+   max-width: 155px;
+}
+.location__city{
+   font-family: 'Arial';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #444444;
+}

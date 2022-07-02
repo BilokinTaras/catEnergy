@@ -1,0 +1,39 @@
+.footer{
+   background-color: var(--color-gray);
+   padding: 58px 0 58px 0;
+}
+.footer__picture{
+   width: 27px;
+   height: 34px;
+   object-fit: cover;
+}
+.footer__wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.social{
+   display: flex;
+}
+.social__icon{
+   max-width: 30px;
+   max-height: 30px;
+}
+.social__item{
+   &:not(:last-child){
+      margin-right: 34px;
+   }
+}
+.footer__company{
+   display: flex;
+   align-items: center;
+}
+.footer__name{
+   font-family: "Arial", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 18px;
+   color: #444444;
+   margin-right: 23px;
+}

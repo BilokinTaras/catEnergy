@@ -1,0 +1,43 @@
+.work{
+   padding: 71px 0 260px 0;
+}
+.work__title{
+   margin: 0 0 72px 0;
+}
+.work__list{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   counter-reset: work-list;
+}
+.work__item{
+   position: relative;
+   &::before{
+      position: absolute;
+      counter-increment: work-list;
+      content: counter(work-list);
+      font-size: 280px;
+      line-height: 280px;
+      color: var(--color-gray);
+      right: 76px;
+      top: -39px;
+      z-index: -1;
+   }
+}
+.work__image{
+   width: 80px;
+   height: 80px;
+   background-color: var(--color-green); 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   svg{
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      fill: var(--color-light);
+   }
+}
+.work__descr{
+   padding: 32px 0 0 0;
+   max-width: 250px;
+}
